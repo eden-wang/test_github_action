@@ -2,6 +2,7 @@ name: delete branch on closed
 on:
   pull_request:
     types: [closed]
+permissions: read-all|write-all
 
 jobs:
   delete-branch:
